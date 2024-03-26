@@ -2,7 +2,12 @@
 name = "tiny-ordered-float"
 version = "0.1.0"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+license = "MIT OR Apache-2.0"
+description = "Tiny version of OrderedFloat"
+categories = ["rust-patterns"]
+homepage = "https://github.com/Traverse-Research/tiny-ordered-floats"
+repository = "https://github.com/Traverse-Research/tiny-ordered-floats"
+keywords = ["f32", "f64", "ord"]
+documentation = "https://docs.rs/tiny-ordered-floats/"
 
 [dependencies]
