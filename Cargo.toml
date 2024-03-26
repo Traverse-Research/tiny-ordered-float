@@ -5,9 +5,9 @@ edition = "2021"
 license = "MIT OR Apache-2.0"
 description = "Tiny version of OrderedFloat"
 categories = ["rust-patterns"]
-homepage = "https://github.com/Traverse-Research/tiny-ordered-floats"
-repository = "https://github.com/Traverse-Research/tiny-ordered-floats"
+homepage = "https://github.com/Traverse-Research/tiny-ordered-float"
+repository = "https://github.com/Traverse-Research/tiny-ordered-float"
 keywords = ["f32", "f64", "ord"]
-documentation = "https://docs.rs/tiny-ordered-floats/"
+documentation = "https://docs.rs/tiny-ordered-float/"
 
 [dependencies]
