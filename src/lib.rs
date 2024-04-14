@@ -1,3 +1,5 @@
+#![no_std]
+
 mod f32;
 mod f64;
 

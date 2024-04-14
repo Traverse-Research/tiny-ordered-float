@@ -1,13 +1,13 @@
 #![allow(clippy::float_cmp, clippy::eq_op, clippy::op_ref)]
 use tiny_ordered_float::{OrderedF32, OrderedF64};
 
-pub use std::cmp::Ordering::*;
-pub use std::convert::TryFrom;
-pub use std::{f32, panic};
+pub use core::cmp::Ordering::*;
+pub use core::convert::TryFrom;
+pub use core::{f32, panic};
 
-pub use std::collections::hash_map::RandomState;
-pub use std::collections::HashSet;
-pub use std::hash::*;
+pub use core::collections::hash_map::RandomState;
+pub use core::collections::HashSet;
+pub use core::hash::*;
 
 #[test]
 fn test_total_order() {
@@ -154,7 +154,7 @@ fn hash_is_good_for_whole_numbers() {
     let state = RandomState::new();
     let limit = 10000;
 
-    let mut set = ::std::collections::HashSet::with_capacity(limit);
+    let mut set = ::core::collections::HashSet::with_capacity(limit);
     for i in 0..limit {
         let mut h = state.build_hasher();
         OrderedF32(i as f32).hash(&mut h);
@@ -173,7 +173,7 @@ fn hash_is_good_for_fractional_numbers() {
     let state = RandomState::new();
     let limit = 10000;
 
-    let mut set = ::std::collections::HashSet::with_capacity(limit);
+    let mut set = ::core::collections::HashSet::with_capacity(limit);
     for i in 0..limit {
         let mut h = state.build_hasher();
         OrderedF32(i as f32 * (1f32 / limit as f32)).hash(&mut h);

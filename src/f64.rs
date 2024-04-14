@@ -1,5 +1,7 @@
 use core::cmp::Ordering;
-use std::hash::{Hash, Hasher};
+use core::cmp::{Eq, Ord, PartialEq, PartialOrd};
+use core::hash::{Hash, Hasher};
+use core::option::{Option, Option::Some};
 
 pub struct OrderedFloat(pub f64);
 
